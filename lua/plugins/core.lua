@@ -6,9 +6,22 @@ return {
     },
   },
   {
-    "nvim-lspconfig",
+    "neovim/nvim-lspconfig",
+    -- https://www.lazyvim.org/plugins/lsp
     opts = {
       inlay_hints = { enabled = false },
+      servers = {
+        zls = {
+          mason = false, -- user lastest zls on github
+          cmd = { "/Users/cfw/.local/bin/zls" },
+          filetypes = { "zig", "zon" },
+          settings = {
+            zls = {
+              enable_snippets = true,
+            },
+          },
+        },
+      },
     },
   },
 }
