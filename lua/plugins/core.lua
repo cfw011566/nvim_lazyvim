@@ -8,7 +8,7 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
-      ensure_installed = { "zig" },
+      ensure_installed = { "zig", "cpp" },
     },
   },
   {
