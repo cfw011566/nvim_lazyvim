@@ -15,7 +15,10 @@ return {
     "neovim/nvim-lspconfig",
     -- https://www.lazyvim.org/plugins/lsp
     opts = {
-      inlay_hints = { enabled = false },
+      inlay_hints = {
+        enabled = true,
+        exclude = { "zig" },
+      },
       servers = {
         zls = {
           mason = false, -- user lastest zls on github
