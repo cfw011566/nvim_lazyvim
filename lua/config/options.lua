@@ -5,6 +5,7 @@
 vim.g.snacks_animate = false
 vim.opt.colorcolumn = "80,132"
 vim.opt.relativenumber = false
+vim.opt.showmode = false
 
 -- from neovim 0.11 what's new
 -- vim.opt.winborder = "rounded"
