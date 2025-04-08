@@ -1,5 +1,25 @@
 return {
   {
+    "catppuccin/nvim",
+    opts = {
+      styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
+        comments = { "italic" }, -- Change the style of comments
+        conditionals = {},
+        loops = {},
+        functions = {},
+        keywords = { "bold" },
+        strings = {},
+        variables = {},
+        numbers = {},
+        booleans = {},
+        properties = { "italic" },
+        types = {},
+        operators = {},
+        miscs = {}, -- Uncomment to turn off hard-coded styles
+      },
+    },
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "catppuccin",
@@ -17,7 +37,7 @@ return {
     opts = {
       inlay_hints = {
         enabled = true,
-        exclude = { "zig" },
+        exclude = { "zig", "c" },
       },
       servers = {
         zls = {
