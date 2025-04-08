@@ -28,7 +28,7 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
-      ensure_installed = { "zig", "cpp", "c" },
+      ensure_installed = { "zig", "cpp", "c", "go" },
     },
   },
   {
@@ -47,6 +47,17 @@ return {
           settings = {
             zls = {
               enable_snippets = true,
+            },
+          },
+        },
+        gopls = {
+          settings = {
+            gopls = {
+              ["ui.inlayhint.hints"] = {
+                compositeLiteralFields = true,
+                constantValues = true,
+                parameterNames = true,
+              },
             },
           },
         },
